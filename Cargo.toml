@@ -1,0 +1,15 @@
+[package]
+name = "planets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "0.3.25"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+opt-level = "z"
+lto = true
+
